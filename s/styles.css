@@ -1,0 +1,412 @@
+/* swhutchison V.1 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts ---------------------------------------------*/
+
+@font-face {
+  font-family: 'Pacifico';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../f/Pacifico-regular/Pacifico-regular.eot');
+  src: url('../f/Pacifico-regular/Pacifico-regular.eot?#iefix') format('embedded-opentype'),
+       local('Pacifico Regular'),
+       local('Pacifico-regular'),
+       url('../f/Pacifico-regular/Pacifico-regular.woff2') format('woff2'),
+       url('../f/Pacifico-regular/Pacifico-regular.woff') format('woff'),
+       url('../f/Pacifico-regular/Pacifico-regular.ttf') format('truetype'),
+       url('../f/Pacifico-regular/Pacifico-regular.svg#Pacifico') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../f/Open-Sans-300/Open-Sans-300.eot');
+  src: url('../f/Open-Sans-300/Open-Sans-300.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Light'),
+       local('Open-Sans-300'),
+       url('../f/Open-Sans-300/Open-Sans-300.woff2') format('woff2'),
+       url('../f/Open-Sans-300/Open-Sans-300.woff') format('woff'),
+       url('../f/Open-Sans-300/Open-Sans-300.ttf') format('truetype'),
+       url('../f/Open-Sans-300/Open-Sans-300.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../f/Open-Sans-regular/Open-Sans-regular.eot');
+  src: url('../f/Open-Sans-regular/Open-Sans-regular.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans'),
+       local('Open-Sans-regular'),
+       url('../f/Open-Sans-regular/Open-Sans-regular.woff2') format('woff2'),
+       url('../f/Open-Sans-regular/Open-Sans-regular.woff') format('woff'),
+       url('../f/Open-Sans-regular/Open-Sans-regular.ttf') format('truetype'),
+       url('../f/Open-Sans-regular/Open-Sans-regular.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans Semi Bold';
+  font-weight: 600;
+  font-style: normal;
+  src: url('../f/Open-Sans-600/Open-Sans-600.eot');
+  src: url('../f/Open-Sans-600/Open-Sans-600.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Semibold'),
+       local('Open-Sans-600'),
+       url('../f/Open-Sans-600/Open-Sans-600.woff2') format('woff2'),
+       url('../f/Open-Sans-600/Open-Sans-600.woff') format('woff'),
+       url('../f/Open-Sans-600/Open-Sans-600.ttf') format('truetype'),
+       url('../f/Open-Sans-600/Open-Sans-600.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../f/Open-Sans-700/Open-Sans-700.eot');
+  src: url('../f/Open-Sans-700/Open-Sans-700.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Bold'),
+       local('Open-Sans-700'),
+       url('../f/Open-Sans-700/Open-Sans-700.woff2') format('woff2'),
+       url('../f/Open-Sans-700/Open-Sans-700.woff') format('woff'),
+       url('../f/Open-Sans-700/Open-Sans-700.ttf') format('truetype'),
+       url('../f/Open-Sans-700/Open-Sans-700.svg#OpenSans') format('svg');
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  text-align:center; 
+  color: #333;
+  width: 100%;
+}
+
+img {
+  display:block;
+  border: none;
+  width: 100%;
+}
+
+a:link {
+  text-decoration:none;
+}
+
+a:visited {
+}
+
+a:hover	{
+}
+
+
+/* =STRUCTURE---------------------------------------------*/
+
+#wrapper {
+  text-align:left;
+  display: flex;
+  margin: 0 30px 30px 30px;
+  flex-wrap:wrap;
+}
+
+#column1 {
+  flex:0 0 234px;
+}
+
+#badge {
+  width:234px;
+  height:234px;
+  margin-top:20px;
+  background:url('../i/scott-2017-01.jpg') no-repeat top;
+  background-size:234px;
+  border-bottom: 10px solid gold;
+}
+
+.badge-text {
+  font-family: 'Open Sans Light';
+  font-size: 2.8rem;
+  padding: 10px;
+}
+.badge-text span {
+  display:block;
+  font-family: 'Open Sans';
+  font-size: 1.4rem
+}
+.resume-link__wrapper {
+  border: 2px solid gray;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:10px;
+}
+.resume-link {
+  font-size: 1.2rem;
+  color: gray;
+  text-transform: uppercase;
+  font-family: 'Open Sans Semi Bold';
+}
+.resume-link:visited {
+  color: gray;
+}
+.resume-link:hover {
+  color: #fff;
+}
+.resume-link__wrapper:hover {
+  background-color: gray;
+}
+.resume-link__wrapper:hover > .resume-link {
+  color: #fff;
+}
+#column_wide {
+  margin-left:30px;
+  margin-top:0px;
+  flex: 1 0 auto;
+}
+
+#portfolio-grid ul {
+  list-style-type:none;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#portfolio-grid li {
+  width:400px;
+  margin-bottom:20px;
+  border:1px solid gold;
+  border-radius: 5px;
+  padding: 10px;
+}
+  #portfolio-grid li img {
+  margin: 0 auto;
+}
+
+/* =NAVIGATION---------------------------------------------*/
+
+/* =TEXT---------------------------------------------*/
+
+h2 {
+  font-family:"Pacifico";
+  font-size:10.0rem;
+  text-align:left;
+  font-weight: normal;
+  margin-top: 114px;
+  border-bottom: 10px solid gold;
+  line-height: 14.0rem;
+  margin-bottom:20px;
+}
+h3 {
+  font-family:"Pacifico";
+  font-size:3.0rem;
+  text-align:left;
+  font-weight: normal;
+  margin-top: 30px;
+  border-bottom: 3px solid gold;
+  line-height: 3.0rem;
+  margin-bottom:20px;
+}
+@media only screen and (max-width: 1390px) {
+/*  h2 {
+    font-size:7.0rem;
+    margin-top: 80px;
+    line-height: 10.0rem;
+    margin-bottom:20px;
+  }
+  #badge {
+    width:160px;
+    height:160px;
+    margin-top:20px;
+    background:url('../i/scott-2017-01.jpg') no-repeat top;
+    background-size:160px;
+    border-bottom: 10px solid gold;
+  }
+  #column1 {
+  flex:0 0 160px;
+  }
+  .badge-text {
+  font-family: 'Open Sans Light';
+  font-size: 1.8rem;
+  padding: 10px;
+  }
+  .badge-text span {
+    display:block;
+    font-family: 'Open Sans';
+    font-size: 1.0rem
+  }*/
+  #portfolio-grid li {
+  width:350px;
+  }
+  #portfolio-grid li img {
+  width:100%;
+  max-width: 350px
+  }
+}
+@media only screen and (max-width: 1279px) {
+  #portfolio-grid li {
+  width:300px;
+  }
+  #portfolio-grid li img {
+  width:100%;
+  max-width: 300px
+  }
+}
+@media only screen and (max-width: 1079px) {
+  h2 {
+    font-size:7.0rem;
+    margin-top: 80px;
+    line-height: 10.0rem;
+    margin-bottom:20px;
+  }
+  #badge {
+    width:160px;
+    height:160px;
+    margin-top:20px;
+    background:url('../i/scott-2017-01.jpg') no-repeat top;
+    background-size:160px;
+    border-bottom: 10px solid gold;
+  }
+  #column1 {
+  flex:0 0 160px;
+  }
+  .badge-text {
+  font-family: 'Open Sans Light';
+  font-size: 1.8rem;
+  padding: 10px;
+  }
+  .badge-text span {
+    display:block;
+    font-family: 'Open Sans';
+    font-size: 1.0rem
+  }
+  #portfolio-grid li {
+  width:275px;
+  }
+  #portfolio-grid li img {
+  width:100%;
+  max-width: 275px
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  h2 {
+    font-size:7.0rem;
+    margin-top: 80px;
+    line-height: 10.0rem;
+    margin-bottom:20px;
+  }
+  #badge {
+    width:160px;
+    height:160px;
+    margin-top:20px;
+    background:url('../i/scott-2017-01.jpg') no-repeat top;
+    background-size:160px;
+    border-bottom: 10px solid gold;
+  }
+  #column1 {
+  flex:0 0 160px;
+  }
+  .badge-text {
+  font-family: 'Open Sans Light';
+  font-size: 1.8rem;
+  padding: 10px;
+  }
+  .badge-text span {
+    display:block;
+    font-family: 'Open Sans';
+    font-size: 1.0rem
+  }
+  #portfolio-grid li {
+  width:300px;
+  }
+  #portfolio-grid li img {
+  width:100%;
+  max-width: 300px
+  }
+}
+
+/*@media only screen and (max-width: 767px) {
+  h2 {
+    font-size:5.0rem;
+    margin-top: 114px;
+    line-height: 8.0rem;
+    margin-bottom:20px;
+    margin-top: 100px;
+  }
+}*/
+
+@media only screen and (max-width: 767px) {
+  #wrapper {
+    display: block;
+    text-align:left;
+    margin: 0 10px 10px 10px;
+    flex-wrap: nowrap;
+  }
+  h2 {
+    font-size:3.0rem;
+    line-height: 1em;
+    margin-bottom:10px;
+    margin-top: 10px;
+    border:0;
+  }
+  #badge {
+    width:120px;
+    height:120px;
+    margin-top:10px;
+    background:url('../i/scott-2017-01.jpg') no-repeat top;
+    background-size:120px;
+    border-bottom: 0;
+  }
+  .badge-text {
+    font-family: 'Open Sans Light';
+    font-size: 1.8rem;
+    padding: 10px;
+    margin-top: 22px;
+  }
+  .badge-text span {
+    display:block;
+    font-family: 'Open Sans';
+    font-size: 1.0rem
+  }
+  #column1 {
+    flex:0 0 100%;
+    display: flex;
+    border-bottom: 10px solid gold;
+  }
+  #column_wide {
+    margin-left: 0;
+  }
+  #portfolio-grid li {
+    width:100%;
+    max-width: 300px;
+    margin-bottom:20px;
+    border:1px solid gold;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #portfolio-grid li img {
+  width:100%;
+  max-width: 300px
+  }
+}
+
+.feature_text {
+  text-align:left;
+}
+
+.feature_text_head {
+  border-top: 10px solid gold;
+  font-family: 'Open Sans Light';
+  font-size: 2.0rem;
+  text-align:left;
+}
+
+
