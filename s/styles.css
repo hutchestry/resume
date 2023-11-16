@@ -109,18 +109,18 @@ a:hover	{
 
 /* =STRUCTURE---------------------------------------------*/
 
-#wrapper {
+.wrapper {
   text-align:left;
   display: flex;
   margin: 0 30px 30px 30px;
   flex-wrap:wrap;
 }
 
-#column1 {
+.column1 {
   flex:0 0 234px;
 }
 
-#badge {
+.badge {
   width:234px;
   height:234px;
   margin-top:20px;
@@ -165,27 +165,27 @@ a:hover	{
 .resume-link__wrapper:hover > .resume-link {
   color: #fff;
 }
-#column_wide {
+.column_wide {
   margin-left:30px;
   margin-top:0px;
   flex: 1 0 auto;
 }
 
-#portfolio-grid ul {
+.portfolio-grid ul {
   list-style-type:none;
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-#portfolio-grid li {
+.portfolio-grid li {
   width:400px;
   margin-bottom:20px;
   border:1px solid gold;
   border-radius: 5px;
   padding: 10px;
 }
-  #portfolio-grid li img {
+  .portfolio-grid li img {
   margin: 0 auto;
 }
 
@@ -220,7 +220,7 @@ h3 {
     line-height: 10.0rem;
     margin-bottom:20px;
   }
-  #badge {
+  .badge {
     width:160px;
     height:160px;
     margin-top:20px;
@@ -228,7 +228,7 @@ h3 {
     background-size:160px;
     border-bottom: 10px solid gold;
   }
-  #column1 {
+  .column1 {
   flex:0 0 160px;
   }
   .badge-text {
@@ -241,19 +241,19 @@ h3 {
     font-family: 'Open Sans';
     font-size: 1.0rem
   }*/
-  #portfolio-grid li {
+  .portfolio-grid li {
   width:350px;
   }
-  #portfolio-grid li img {
+  .portfolio-grid li img {
   width:100%;
   max-width: 350px
   }
 }
 @media only screen and (max-width: 1279px) {
-  #portfolio-grid li {
+  .portfolio-grid li {
   width:300px;
   }
-  #portfolio-grid li img {
+  .portfolio-grid li img {
   width:100%;
   max-width: 300px
   }
@@ -265,7 +265,7 @@ h3 {
     line-height: 10.0rem;
     margin-bottom:20px;
   }
-  #badge {
+  .badge {
     width:160px;
     height:160px;
     margin-top:20px;
@@ -273,7 +273,7 @@ h3 {
     background-size:160px;
     border-bottom: 10px solid gold;
   }
-  #column1 {
+  .column1 {
   flex:0 0 160px;
   }
   .badge-text {
@@ -286,10 +286,10 @@ h3 {
     font-family: 'Open Sans';
     font-size: 1.0rem
   }
-  #portfolio-grid li {
+ .portfolio-grid li {
   width:275px;
   }
-  #portfolio-grid li img {
+  .portfolio-grid li img {
   width:100%;
   max-width: 275px
   }
@@ -302,7 +302,7 @@ h3 {
     line-height: 10.0rem;
     margin-bottom:20px;
   }
-  #badge {
+  .badge {
     width:160px;
     height:160px;
     margin-top:20px;
@@ -310,7 +310,7 @@ h3 {
     background-size:160px;
     border-bottom: 10px solid gold;
   }
-  #column1 {
+  .column1 {
   flex:0 0 160px;
   }
   .badge-text {
@@ -323,10 +323,10 @@ h3 {
     font-family: 'Open Sans';
     font-size: 1.0rem
   }
-  #portfolio-grid li {
+  .column1 li {
   width:300px;
   }
-  #portfolio-grid li img {
+  .portfolio-grid li img {
   width:100%;
   max-width: 300px
   }
@@ -343,7 +343,7 @@ h3 {
 }*/
 
 @media only screen and (max-width: 767px) {
-  #wrapper {
+  .wrapper {
     display: block;
     text-align:left;
     margin: 0 10px 10px 10px;
@@ -356,7 +356,7 @@ h3 {
     margin-top: 10px;
     border:0;
   }
-  #badge {
+  .badge {
     width:120px;
     height:120px;
     margin-top:10px;
@@ -375,15 +375,15 @@ h3 {
     font-family: 'Open Sans';
     font-size: 1.0rem
   }
-  #column1 {
+  .column1 {
     flex:0 0 100%;
     display: flex;
     border-bottom: 10px solid gold;
   }
-  #column_wide {
+  .column_wide {
     margin-left: 0;
   }
-  #portfolio-grid li {
+  .portfolio-grid li {
     width:100%;
     max-width: 300px;
     margin-bottom:20px;
@@ -392,7 +392,7 @@ h3 {
     padding: 10px;
     box-sizing: border-box;
   }
-  #portfolio-grid li img {
+  .portfolio-grid li img {
   width:100%;
   max-width: 300px
   }
