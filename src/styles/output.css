@@ -1,0 +1,1344 @@
+/*
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.static {
+  position: static;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.table {
+  display: table;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/*
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
+
+:root {
+  --accent: #2337ff;
+  --accent-dark: #000d8a;
+  --black: 15, 18, 25;
+  --gray: 96, 115, 159;
+  --gray-light: 229, 233, 240;
+  --gray-dark: 34, 41, 57;
+  --gray-gradient: rgba(var(--gray-light), 50%), #fff;
+  --box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+		0 16px 32px rgba(var(--gray), 33%);
+}
+
+@font-face {
+  font-family: 'Atkinson';
+
+  src: url('/fonts/atkinson-regular.woff') format('woff');
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atkinson';
+
+  src: url('/fonts/atkinson-bold.woff') format('woff');
+
+  font-weight: 700;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pacifico';
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  src: url('/fonts/Pacifico-regular/Pacifico-regular.eot');
+
+  src: url('/fonts/Pacifico-regular/Pacifico-regular.eot?#iefix') format('embedded-opentype'),
+       local('Pacifico Regular'),
+       local('Pacifico-regular'),
+       url('/fonts/Pacifico-regular/Pacifico-regular.woff2') format('woff2'),
+       url('/fonts/Pacifico-regular/Pacifico-regular.woff') format('woff'),
+       url('/fonts/Pacifico-regular/Pacifico-regular.ttf') format('truetype'),
+       url('/fonts/Pacifico-regular/Pacifico-regular.svg#Pacifico') format('svg');
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  font-family: 'Atkinson', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background: linear-gradient(var(--gray-gradient)) no-repeat;
+  background-size: 100% 600px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: rgb(var(--gray-dark));
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+main {
+  /* width: 100%; */
+  /* max-width: calc(100% - 2em); */
+  margin: auto;
+  /* padding: 3em 1em; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* margin: 0 0 0.5rem 0; */
+  color: rgb(var(--black));
+  /* line-height: 1.2; */
+}
+
+h1 {
+  font-size: 3.052em;
+}
+
+h2 {
+  font-size: 2.441em;
+}
+
+h3 {
+  font-size: 1.953em;
+}
+
+h4 {
+  font-size: 1.563em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.prose p {
+  margin-bottom: 2em;
+}
+
+textarea {
+  width: 100%;
+  font-size: 16px;
+}
+
+input {
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+code {
+  padding: 2px 5px;
+  background-color: rgb(var(--gray-light));
+  border-radius: 2px;
+}
+
+pre {
+  padding: 1.5em;
+  border-radius: 8px;
+}
+
+pre > code {
+  all: unset;
+}
+
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding: 0 0 0 20px;
+  margin: 0px;
+  font-size: 1.333em;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgb(var(--gray-light));
+}
+
+/* @media (max-width: 1400px) {
+	body {
+		font-size: 18px;
+	}
+	main {
+		padding: 1em;
+	}
+} */
+
+.sr-only {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px 1px 1px 1px);
+  /* maybe deprecated but we need to support legacy browsers */
+  clip: rect(1px, 1px, 1px, 1px);
+  /* modern browsers, clip-path works inwards from each corner */
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+  white-space: nowrap;
+}
+
+img {
+  display:block;
+  border: none;
+  width: 100%;
+}
+
+/* Fonts ---------------------------------------------*/
+
+@font-face {
+  font-family: 'Pacifico';
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  src: url('../f/Pacifico-regular/Pacifico-regular.eot');
+
+  src: url('../f/Pacifico-regular/Pacifico-regular.eot?#iefix') format('embedded-opentype'),
+       local('Pacifico Regular'),
+       local('Pacifico-regular'),
+       url('../f/Pacifico-regular/Pacifico-regular.woff2') format('woff2'),
+       url('../f/Pacifico-regular/Pacifico-regular.woff') format('woff'),
+       url('../f/Pacifico-regular/Pacifico-regular.ttf') format('truetype'),
+       url('../f/Pacifico-regular/Pacifico-regular.svg#Pacifico') format('svg');
+}
+
+.pacifico {
+  font-family: "Pacifico";
+}
+
+.feature {
+  font-family:"Pacifico";
+  font-size:10.0rem;
+  text-align:left;
+  font-weight: normal;
+  margin-top: 114px;
+  border-bottom: 10px solid gold;
+  line-height: 14.0rem;
+  margin-bottom:20px;
+}
+
+/* =STRUCTURE---------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper:first-of-type {
+  padding-top: 67px;
+}
+
+.wrapper {
+  text-align:left;
+  display: flex;
+  margin: 0 30px 30px 30px;
+  flex-wrap:wrap;
+}
+
+.column1 {
+  flex:0 0 234px;
+}
+
+.badge {
+  width:234px;
+  height:234px;
+  margin-top:20px;
+  background:url('../i/scott-2017-01.webp') no-repeat top;
+  background-size:234px;
+  border-bottom: 10px solid gold;
+}
+
+.badge-text {
+  /* font-family: 'Open Sans Light'; */
+  font-size: 2.8rem;
+  padding: 10px;
+  line-height: 1;
+}
+
+.badge-text span {
+  display:block;
+  /* font-family: 'Open Sans'; */
+  font-size: 1.4rem
+}
+
+.resume-link__wrapper {
+  border: 2px solid gray;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:10px;
+}
+
+.resume-link {
+  font-size: 1.1rem;
+  color: gray;
+  text-transform: uppercase;
+  /* font-family: 'Open Sans Semi Bold'; */
+  text-decoration: none;
+}
+
+.resume-link:visited {
+  color: gray;
+}
+
+.resume-link:hover {
+  color: #fff;
+}
+
+.resume-link__wrapper:hover {
+  background-color: gray;
+}
+
+.resume-link__wrapper:hover > .resume-link {
+  color: #fff;
+}
+
+.column_wide {
+  margin-left:30px;
+  margin-top:0px;
+  flex: 1 0 auto;
+}
+
+.portfolio-grid ul {
+  list-style-type:none;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portfolio-grid li {
+  width:400px;
+  margin-bottom:20px;
+  border:1px solid gold;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.portfolio-grid li img {
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  height: 82px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  /* padding: 20px 20px; */
+  /* border-right: 1px solid #f4f4f4; */
+  padding: 1em 0.5em;
+  color: var(--black);
+  border-bottom:10px solid transparent;
+  text-decoration: none;
+  font-size: 1.8rem ;
+}
+
+.header li a.active {
+  text-decoration: none;
+  border-bottom-color: var(--black);
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  /* background-color: #f4f4f4; */
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* MEDIA QUERIES------------------*/
+
+@media only screen and (max-width: 1390px) {
+  /*  h2 {
+      font-size:7.0rem;
+      margin-top: 80px;
+      line-height: 10.0rem;
+      margin-bottom:20px;
+    }
+    .badge {
+      width:160px;
+      height:160px;
+      margin-top:20px;
+      background:url('../i/scott-2017-01.jpg') no-repeat top;
+      background-size:160px;
+      border-bottom: 10px solid gold;
+    }
+    .column1 {
+    flex:0 0 160px;
+    }
+    .badge-text {
+    font-family: 'Open Sans Light';
+    font-size: 1.8rem;
+    padding: 10px;
+    }
+    .badge-text span {
+      display:block;
+      font-family: 'Open Sans';
+      font-size: 1.0rem
+    }*/
+
+  .portfolio-grid li {
+    width:350px;
+  }
+
+  .portfolio-grid li img {
+    width:100%;
+    max-width: 350px
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .portfolio-grid li {
+    width:300px;
+  }
+
+  .portfolio-grid li img {
+    width:100%;
+    max-width: 300px
+  }
+}
+
+@media only screen and (max-width: 1079px) {
+  /* h2 {
+      font-size:7.0rem;
+      margin-top: 80px;
+      line-height: 10.0rem;
+      margin-bottom:20px;
+    } */
+
+  .badge {
+    width:160px;
+    height:160px;
+    margin-top:20px;
+    background:url('../i/scott-2017-01.jpg') no-repeat top;
+    background-size:160px;
+    border-bottom: 10px solid gold;
+  }
+
+  .column1 {
+    flex:0 0 160px;
+  }
+
+  .badge-text {
+    /* font-family: 'Open Sans Light'; */
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+
+  .badge-text span {
+    display:block;
+    /* font-family: 'Open Sans'; */
+    font-size: 1.0rem
+  }
+
+  .portfolio-grid li {
+    width:275px;
+  }
+
+  .portfolio-grid li img {
+    width:100%;
+    max-width: 275px
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  /* h2 {
+      font-size:7.0rem;
+      margin-top: 80px;
+      line-height: 10.0rem;
+      margin-bottom:20px;
+    } */
+
+  .badge {
+    width:160px;
+    height:160px;
+    margin-top:20px;
+    background:url('../i/scott-2017-01.jpg') no-repeat top;
+    background-size:160px;
+    border-bottom: 10px solid gold;
+  }
+
+  .column1 {
+    flex:0 0 160px;
+  }
+
+  .badge-text {
+    /* font-family: 'Open Sans Light'; */
+    font-size: 2.8rem;
+    padding: 10px;
+  }
+
+  .badge-text span {
+    display:block;
+    /* font-family: 'Open Sans'; */
+    font-size: 1.0rem
+  }
+
+  .column1 li {
+    width:300px;
+  }
+
+  .portfolio-grid li img {
+    width:100%;
+    max-width: 300px
+  }
+}
+
+/* @media only screen and (max-width: 767px) {
+    h2 {
+      font-size:5.0rem;
+      margin-top: 114px;
+      line-height: 8.0rem;
+      margin-bottom:20px;
+      margin-top: 100px;
+    }
+  } */
+
+@media only screen and (max-width: 767px) {
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .wrapper {
+    display: block;
+    text-align:left;
+    margin: 0 10px 10px 10px;
+    flex-wrap: nowrap;
+  }
+
+  h2.feature {
+    font-size:3.0rem;
+    line-height: 1em;
+    margin-bottom:10px;
+    margin-top: 10px;
+    border:0;
+  }
+
+  h3 {
+    font-size:2.4rem
+  }
+
+  /* .feature {
+      font-family:"Pacifico";
+      font-size:10.0rem;
+      text-align:left;
+      font-weight: normal;
+      margin-top: 114px;
+      border-bottom: 10px solid gold;
+      line-height: 14.0rem;
+      margin-bottom:20px;
+    } */
+
+  .badge {
+    width:120px;
+    height:120px;
+    margin-top:10px;
+    background:url('../i/scott-2017-01.jpg') no-repeat top;
+    background-size:120px;
+    border-bottom: 0;
+  }
+
+  .badge-text {
+    /* font-family: 'Open Sans Light'; */
+    font-size: 1.8rem;
+    padding: 10px;
+    margin-top: 22px;
+  }
+
+  .badge-text span {
+    display:block;
+    /* font-family: 'Open Sans'; */
+    font-size: 1.0rem
+  }
+
+  .column1 {
+    flex:0 0 100%;
+    display: flex;
+    border-bottom: 10px solid gold;
+  }
+
+  .column_wide {
+    margin-left: 0;
+  }
+
+  .portfolio-grid li {
+    width:100%;
+    max-width: 300px;
+    margin-bottom:20px;
+    border:1px solid gold;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .portfolio-grid li img {
+    width:100%;
+    max-width: 300px
+  }
+}
+
+/* .feature_text {
+    text-align:left;
+  }
+  
+  .feature_text_head {
+    border-top: 10px solid gold;
+    font-size: 2.0rem;
+    text-align:left;
+  } */
