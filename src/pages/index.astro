@@ -1,0 +1,288 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Button from "../components/button.astro";
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+
+
+		<main class="mx-auto max-w-screen-xl px-3 py-8">
+			<div class="flex flex-col md:flex-row md:items-center">
+				<div class="flex flex-col items-center md:order-last basis-full md:basis-1/3 pb-8">
+					<img class="mb-2 w-2/3 md:w-full" alt="Handsome image of Scott" src="../i/scott-2017-01.webp" />
+					<a class="text-xs button-primary uppercase py-2 px-4 rounded-full" href="d/scott-hutchison-resume.pdf" target="blank">Get my Resume!</a>
+				</div>
+				<div class="basis-full md:basis-2/3 md:py-16">
+						<h2 class="text-xl md:text-5xl">Hi, I'm Scott, front end web developer, husband, father, brewer and technology enthusiast.</h2>
+						<p class="text-md md:text-xl md:basis-2/3 py-6">I've worked as a software engineering manager and individual contributer at the largest home improvement retailer in the world during a time of explosive growth in ecommerce.</p>
+				</div>
+			</div>
+			<div class="my-8 py-8 border-t-8 border-yellow-400">
+				<h2 class="text-2xl md:text-4xl pb-6">Technology Leader</h2>
+				<p class="text-md md:text-xl">Proven technology leader with 20 years in the business. Driven by the transformative nature of the Internet in our lives, our economy and the opportunities to enhance and enrich our lives through technology. The most satisfying part of my work is leading and guiding teams and building frameworks to organize and optimize work. Then we can all be happy. ;)</p> 
+
+				
+			</div>
+			<div class="flex flex-col md:flex-row">
+				<div class="my-8 py-8 border-t-8 border-yellow-400 basis-full md:basis-2/3 md:pr-6">
+					<h3 class="text-2xl pb-6">Delivery</h3> 
+					<p class="text-md md:text-xl pb-6">Delivery is about commitment and negotiation. Smart development teams under commit and over deliver.  This sets the team up for success and sets realistic expectations. Good product managers will have a backlog available for devs to pick up if work is finished early. “Bonus” work can be incentivized and is positive. Continuously over committing and under delivering ruins the morale of the team. Hard to keep a team positive if they are coming up short, quarter after quarter due to over committing.</p>
+					<p class="text-md md:text-xl pb-6">Teams should not defer bugs and should avoid deferring requirements of an agreed upon feature. Code is never perfect and bugs happen, but bugs and missing requirements create technical debt, a debt no one wants to pay. Better to get it right or else expect more time, money and capacity spent later.</p>
+					<h3 class="text-2xl">Path to successful delivery of commitments</h3>
+					<ul class="list-disc pb-6 pl-6">
+						<li>Let the team contribute when making commitments</li>
+						<li>Fully understand and document the scope of the work being asked for. Spike unknowns and create a design doc for integrations</li>
+						<li>Understand the capacity needed to accomplish the work and worst-case scenarios</li>
+						<li>Frequently check-in with development managers and product management team</li>
+						<li>Look for ways teams can optimize and document processes to eliminate churn and unknowns</li>
+					</ul>
+
+					<h3 class="text-2xl pb-6">Managing/Mentoring</h3>
+					<p class="text-md md:text-xl pb-6">As a leader, listening to the dreams and aspirations, concerns and disappointments of those who report to me is crucial to earning their respect and confidence. As a manager, establishing trust can provide motivation and makes asking others to complete tasks and be accountable for commitments much easier. As a mentor, my goal is success for individuals and success as a team. Fostering good team vibes and giving others the opportunity to lead and grow, get out of their comfort zone and challenge their strengths and weaknesses in a positive learning environment is key.</p>
+					<p class="text-md md:text-xl pb-6">It's important to have a vision for why we are doing what we're doing. It's the managers role to clearly and frequently state the vision, assign goals, and explain why the work matters. When others are onboard and understand what needs to be done they can execute on that work.</p>
+					
+					<h3 class="text-2xl pb-6">Project Planning</h3>
+					<p class="text-md md:text-xl pb-6">Understanding the desired outcomes of the project, detailing why we're doing it and showing how it can be done via building a roadmap is how I've generally approached kicking off a project. These meetings typically involve stakeholders from product and engineering. The product team provides the detailed requirements for all of the known scenarios and engineering provides high level consultation and sometimes a flowchart showing how systems can be used to generate the required data.</p>
+					<p class="text-md md:text-xl pb-6">Once a plan is defined, a high level LOE is given. The product team will work with engineering managers to write and groom all of the work tickets for the engineers to pick up and the work is prioritized and scheduled against any other work planned or in flight by the product manager. Once the work begins, the project is tracked with a status report published weekly. </p>
+	
+
+					<h3 class="text-2xl pb-6">Experience </h3>
+					<div class="pb-6">
+						<h4>The Home Depot</span> // 6/2013 to 7/2021</h4>
+						<p><span class="font-bold">Software Engineering Manager</span>, homedepot.com, HD Home, Platform</p>
+						<ul class="list-disc pb-6 pl-6">
+							<li>Managed 9-12 engineers across several squads each with it's own purpose.</li>
+							<li>Organized feature work with product owners and project managers in preparation for the next quarter's work.</li>
+								<li>Guided and trained product managers how to break features into stories for engineers that thoroughly detail requirements, and acceptance criteria.</li>
+								<li>Aligned work commitments and timelines with dependent engineering teams to get on their roadmaps and avoid issues during development and at deployment.</li>
+								<li>Kept the team motivated with frequent team meetings, clear communication of expectations, and celebrations.</li>
+								<li>Agile process: daily morning scrum, daily code review and publishing, weekly grooming, weekly show and tell, quarterly or ad-hoc retro.</li>
+							</ul>
+					</div>
+					<div class="pb-6">
+						<h4>Southern Company & Georgia Power // 1/2008 - 6/2013</h4>
+						<p><span class="font-bold">Lead UI Developer</span>, Southern Company intranet</p>
+						<ul class="list-disc pb-6 pl-6">
+							<li>Lead a group of five in-house junior developers/designers.</li>
+							<li>Trained end users at other operating companies throughout Southern Company.</li>
+							<li>Wrote the CSS and HTML for the basic theme and default properties of the components that make up the content management system.</li>
+						</ul>
+					</div>
+					<div class="pb-6">
+						<h4>Cleveland.com // 4/2006 - 12/2007</h4>
+						<p><span class="font-bold">Web producer</span>, cleveland.com (The Plain Dealer)</p>
+						<ul class="list-disc pb-6 pl-6">
+								<li>Cleaned up code, redesigned pages with CSS, designed a hundred or so animated GIFs and flash advertisements for our local advertisers, and performed any maintenance or troubleshooting on the website as necessary.</li>
+							</ul>
+					</div>
+					<div class="pb-6">
+						<h4>Sun News // 2005 - 2006</h4>
+						<p><span class="font-bold">Digital illustrator</span> Cleveland, OH</p>
+						<p>Freelance illustrator creating maps and other graphic elements to accompany news stories.</p>
+					</div>
+					<div class="pb-6">
+						<h4>Cincinnati Citysearch // 2001</h4>
+						<p><span class="font-bold">Assistant Editor</span> at CincinnatiCitysearch.com.</p>
+						<p>Duties included, writing stories, coding the stories, contributing photography, organizing campaigns, hiring and directing freelancers, editing story submissions, and working with local, regional and national editors.</p>
+					</div>
+
+					<div class="pb-6">
+						<h3 class="text-2xl pb-6">Education</h3>
+						<p><span class="font-bold">Brewing & Fermentation Certificate</span>, Chattahoochee Technical College, 2022-2023
+						<p><span class="font-bold">Visual Communication & Design</span>, Cuyahoga Community College, 2006</p>
+						<p><span class="font-bold">BA English Literature & Journalism</span>, University of Cincinnati, 2001</p>
+					</div>
+				</div>
+				<div class="my-8 py-8 border-t-8 border-yellow-400 basis-full md:basis-1/3">
+						<h3 class="text-2xl pb-6">Skills</h3>
+						<div class="flex flex-wrap">
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">HTML</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">CSS</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Javascript</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">PHP</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Wordpresss</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">React</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Typescript</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">NodeJS</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Vue</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">NextJS</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">AstroJS</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">MDX</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Markdown</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Agile</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Leadership</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Jira</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Confluence</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Github</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Coaching</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Documentation</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Mentoring</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Vision</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">Project Managment</span>
+							<span class="pill-primary mr-1 mb-1 text-xs uppercase py-1 px-4 border-2 rounded-full">UI/UX</span>
+						</div>
+						<div id="contact-section"></div>
+						<div class="mt-8 pt-8 border-t-8 border-yellow-400 basis-full md:basis-2/3">
+							<h3 class="text-2xl pb-6">Shoot me an email!</h3>
+							<div class="flex flex-row justify-center">
+			
+							 <form
+								action="https://api.web3forms.com/submit"
+								method="POST"
+								id="contact-form"
+								class="needs-validation basis-full"
+								novalidate>
+
+								<input type="hidden" name="access_key" value="950adf63-aa9a-47d0-8a0f-1b23cf5b928b" />
+								<input type="checkbox" class="hidden" style="display:none" name="botcheck" />
+								<div class="mb-5">
+									<input
+										type="text"
+										placeholder="Full Name"
+										required
+										class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+										name="name"
+									/>
+									<div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+										Please provide your full name.
+									</div>
+								</div>
+								<div class="mb-5">
+									<label for="email_address" class="sr-only">Email Address</label><input
+										id="email_address"
+										type="email"
+										placeholder="Email Address"
+										name="email"
+										required
+										class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+									/>
+									<div class="empty-feedback text-red-400 text-sm mt-1">
+										Please provide your email address.
+									</div>
+									<div class="invalid-feedback text-red-400 text-sm mt-1">
+										Please provide a valid email address.
+									</div>
+								</div>
+								<div class="mb-3">
+									<textarea
+										name="message"
+										required
+										placeholder="Your Message"
+										class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
+									></textarea>
+									<div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+										Please enter your message.
+									</div>
+								</div>
+								<Button type="submit" size="lg" block>Gopher it!</Button>
+								<div id="result" class="mt-3 text-center"></div>
+							</form>
+						</div>
+						<div class="mt-8 pt-8 border-t-8 border-yellow-400 basis-full md:basis-2/3">
+							<h3 class="text-2xl pb-6">About this site...</h3>
+							<p>This mini resume site was built using <a href="https://astro.build/" target="_blank">AstroJS</a>, <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a> and <a href="https://web3forms.com/" target="_blank">W3Forms</a>. Really no need for anything more than that at the moment. I am using AstroJS to publish content elsewhere and for that I'm using MDX.
+						</div>
+				</div>
+			</div>
+			
+
+		</div>
+
+<style>
+  .invalid-feedback,
+  .empty-feedback {
+    display: none;
+  }
+
+  .was-validated :placeholder-shown:invalid ~ .empty-feedback {
+    display: block;
+  }
+
+  .was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+    display: block;
+  }
+
+  .is-invalid,
+  .was-validated :invalid {
+    border-color: #dc3545;
+  }
+</style>
+
+<script is:inline>
+	  // astro:page-load to support view Transitions.
+  // use DOMContentLoaded event if you are not using View Transitions
+  document.addEventListener(
+    "astro:page-load",
+    () => {
+      const form = document.getElementById("contact-form");
+      const result = document.getElementById("result");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        form.classList.add("was-validated");
+        if (!form.checkValidity()) {
+          form.querySelectorAll(":invalid")[0].focus();
+          return;
+        }
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        result.innerHTML = "Sending...";
+
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: json,
+        })
+          .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+              result.classList.add("text-green-500");
+              result.innerHTML = json.message;
+            } else {
+              console.log(response);
+              result.classList.add("text-red-500");
+              result.innerHTML = json.message;
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+          })
+          .then(function () {
+            form.reset();
+            form.classList.remove("was-validated");
+            setTimeout(() => {
+              result.style.display = "none";
+            }, 5000);
+          });
+      });
+    },
+    { once: true },
+  );
+</script>
+		
+				</div>
+				<!-- / column_wide -->
+		
+		</div>
+		<!-- / wrapper -->
+
+		</main>
+		<Footer />
+	</body>
+</html>

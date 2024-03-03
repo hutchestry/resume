@@ -1,0 +1,302 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ :root {
+  --primary-color: #ffd700;
+  --secondary-color: #333;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+  --button-bg: #000;
+  --button-color:#fff;
+  --pill-border: #000;
+}
+
+[data-theme="dark"] {
+  --primary-color: #ffd700;
+  --secondary-color: #333;
+  --font-color: #fff;
+  --bg-color: #000;
+  --heading-color: #ffd700;
+  --button-bg: #fff;
+  --button-color:#000;
+  --pill-border: #fff;
+}
+
+.text-primary {
+  color:var(--font-color);
+}
+.bg-primary {
+  background-color: var(--bg-color);
+}
+
+.button-primary {
+  color:var(--button-color) ;
+  background-color: var(--button-bg);
+}
+
+.pill-primary {
+  border-color: var(--pill-border);
+}
+
+@font-face {
+	font-family: 'Atkinson';
+	src: url('/fonts/atkinson-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Atkinson-bold';
+	src: url('/fonts/atkinson-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Pacifico-regular/Pacifico-regular.eot');
+  src: url('/fonts/Pacifico-regular/Pacifico-regular.eot?#iefix') format('embedded-opentype'),
+       local('Pacifico Regular'),
+       local('Pacifico-regular'),
+       url('/fonts/Pacifico-regular/Pacifico-regular.woff2') format('woff2'),
+       url('/fonts/Pacifico-regular/Pacifico-regular.woff') format('woff'),
+       url('/fonts/Pacifico-regular/Pacifico-regular.ttf') format('truetype'),
+       url('/fonts/Pacifico-regular/Pacifico-regular.svg#Pacifico') format('svg');
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(html) {
+    scroll-behavior: auto;
+  }
+}
+
+*{scroll-behavior: smooth;}
+
+body {
+	font-family: 'Atkinson', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	background: var(--bg-color);
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	color: var(--font-color);
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Atkinson-bold', serif;
+}
+
+
+.sr-only {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+	clip: rect(1px 1px 1px 1px);
+	/* maybe deprecated but we need to support legacy browsers */
+	clip: rect(1px, 1px, 1px, 1px);
+	/* modern browsers, clip-path works inwards from each corner */
+	clip-path: inset(50%);
+	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+	white-space: nowrap;
+}
+
+/* Fonts ---------------------------------------------*/
+
+@font-face {
+  font-family: 'Pacifico';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../f/Pacifico-regular/Pacifico-regular.eot');
+  src: url('../f/Pacifico-regular/Pacifico-regular.eot?#iefix') format('embedded-opentype'),
+       local('Pacifico Regular'),
+       local('Pacifico-regular'),
+       url('../f/Pacifico-regular/Pacifico-regular.woff2') format('woff2'),
+       url('../f/Pacifico-regular/Pacifico-regular.woff') format('woff'),
+       url('../f/Pacifico-regular/Pacifico-regular.ttf') format('truetype'),
+       url('../f/Pacifico-regular/Pacifico-regular.svg#Pacifico') format('svg');
+}
+
+.pacifico {
+  font-family: "Pacifico";
+}
+
+.header {
+  background: var(--bg-color);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+	height: 70px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background: var(--bg-color);
+}
+
+.header li a {
+  display: block;
+  text-decoration: none;
+  padding: 1em 0.5em;
+}
+.header li a.active {
+		text-decoration: none;
+		border-bottom-color: var(--black);
+	}	
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: .5em 0.5em;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: var(--bg-color);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 100vmax;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+/* MEDIA QUERIES------------------*/
+
+@media only screen and (max-width: 1390px) {
+
+  }
+  @media only screen and (max-width: 1279px) {
+
+  }
+  @media only screen and (max-width: 1079px) {
+    
+  }
+  
+  @media only screen and (max-width: 959px) {
+   
+  }
+  
+  @media only screen and (max-width: 767px) {
+
+  }
+  
+  @media only screen and (max-width: 767px) {
+    
+  
+  }
+  
+
+   /* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background: var(--bg-color);
+      color: var(--font-color);
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+      background: var(--bg-color);
+      color: var(--font-color);
+  }
+}
