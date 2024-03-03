@@ -1,25 +1,6 @@
-# Astro Starter Kit: Blog
+# Scott's Resume 
 
-```sh
-npm create astro@latest -- --template blog
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
-
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+Built from the Astro starter. Probably overkill for this one page site. Includes TailwindCSS. Always good to practice building with Tailwind. I'll leave some of the Astro documentation on the rest of this readme. Originally I was going to make this a blog but for now it's simply a resume page for anyone seeking to hire me. So if you're looking for someone, look no further! Check out my page and shoot me an email! I even put, "Gopher it!", on the submit button because it's a corny joke that my son will laugh at. Cheers!
 
 ## 🚀 Project Structure
 
@@ -63,6 +44,3 @@ All commands are run from the root of the project, from a terminal:
 
 Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
