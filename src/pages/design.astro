@@ -1,0 +1,180 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title ="Hutchestry | Design";
+const description="Design Artifacts"
+
+const items = [
+
+{
+    title: "Southern Power Safety | Southern Power Co.",
+    url: "",
+    image: "/i/sopower_safety_challenge_400.jpg",
+},
+{
+    title: "Next Generation | Southern Nuclear",
+    url: "",
+    image: "/i/next_gen_news_400.jpg",
+},
+{
+    title: "External Affairs | Georgia Power",
+    url: "",
+    image: "/i/ext_affairs_400.jpg",
+},
+{
+    title: "Retirees",
+    url: "",
+    image: "/i/retirees_400.jpg",
+},
+{
+    title: "Transmission | Georgia Power",
+    url: "",
+    image: "/i/trans_forestry_400.jpg",
+},
+{
+    title: "Get the Facts",
+    url: "",
+    image: "/i/get_the_facts_400.jpg",
+},
+{
+    title: "Sales",
+    url: "",
+    image: "/i/sales_400.jpg",
+},
+{
+    title: "Workforce Development | Georgia Power",
+    url: "",
+    image: "/i/worforce_dev_400.jpg",
+},
+{
+    title: "On the Go | News",
+    url: "",
+    image: "/i/onthego-news-large.png",
+},
+{
+    title: "On the Go | Menu",
+    url: "",
+    image: "/i/onthego-menu-large.png",
+},
+{
+    title: "On the Go | App",
+    url: "",
+    image: "/i/onthego-app-400.png",
+},
+{
+    title: "Plugged In",
+    url: "",
+    image: "/i/plugged_in_400.jpg",
+},
+{
+    title: "Georgia Power Lakes",
+    url: "",
+    image: "/i/lakes_400.jpg",
+},
+{
+    title: "Customer Services | Website",
+    url: "",
+    image: "/i/customer_services_400.jpg",
+},
+{
+    title: "Georgia Power Transmission Website",
+    url: "",
+    image: "/i/transmission_400.jpg",
+},
+{
+    title: "The Citizen | Georgia Power",
+    url: "",
+    image: "/i/citizen-tablet-large.png",
+},
+{
+    title: "Fleet Street Logo | Dark",
+    url: "",
+    image: "/i/fleet-street-logo-dark.jpg",
+},
+{
+    title: "Fleet Street | Logo Light",
+    url: "",
+    image: "/i/fleet-street-logo-light.jpg",
+},
+{
+    title: "Southern Computer Warehouse | Website",
+    url: "",
+    image: "/i/scw_400.jpg",
+},
+{
+    title: "European Antique Pine Furniture",
+    url: "",
+    image: "/i/european-antique-pine-400.png",
+},
+{
+    title: "Lemon Scrub | Product Logo",
+    url: "",
+    image: "/i/scrub-lemon.jpg",
+},
+{
+    title: "Portrait of a Chip Bag",
+    url: "",
+    image: "/i/chipbag-400.jpg",
+},
+{
+    title: "My Menu Blog | WP Website",
+    url: "",
+    image: "/i/my-menu-blog-large.png",
+},
+{
+    title: "HIRE | Inspired by Sheperd Fairy",
+    url: "",
+    image: "/i/hire-400.gif",
+},
+{
+    title: "Kandy Kulture",
+    url: "",
+    image: "/i/kandy-kulture-400.jpg",
+},
+{
+    title: "Man Dog",
+    url: "",
+    image: "/i/mandog-400.jpg",
+},
+{
+    title: "Hut",
+    url: "",
+    image: "/i/hut_web.jpg",
+}
+];
+
+---
+
+<Layout description={description} title={title}>
+  <main class="max-w-7xl mx-auto min-h-screen bg-gray-100">
+    <div class="flex flex-col md:flex-row">
+      <!-- Left Column - Bio & Links -->
+      <aside class="w-full md:w-80 p-6 md:min-h-screen">
+        <div class="sticky top-8">
+          <div class="flex flex-col items-center space-y-4">
+            <img src="/i/scott-2017-01.webp" alt="Scott Hutchison" class="w-20 h-20 rounded-full" />
+            <h1 class="text-xl font-bold">Scott Hutchison</h1>
+            <p class="text-sm text-gray-600 text-center">
+               #remotework #freelance #ai #productivity #techindustry
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Column - Items -->
+      <section class="columns-1 md:columns-3 gap-5 space-y-5 px-6 py-6">
+        <!-- Items Grid -->
+          {items.map(item => (
+
+        <div class="">
+            <a 
+              href={item.url} 
+              target={item.url.startsWith('http') ? '_blank' : undefined}
+            >
+              <img src={item.image} alt={item.title} class="w-full rounded-xl shadow" loading="lazy" />
+            </a>
+          </div>
+          ))}
+      </section>
+    </div>
+  </main>
+</Layout>
