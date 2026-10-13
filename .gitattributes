@@ -1,0 +1,7 @@
+# Mark script files as executable (100755)
+*.sh    executable
+*.py    executable
+*.rb    executable
+
+# Mark all other files as non-executable (100644)
+*       -executable   
